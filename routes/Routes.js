@@ -1,6 +1,5 @@
 const express = require("express");
 const {
-  placeBetTrx,
   loginPage,
   gameHistoryWingo,
   myHistoryWingo,
@@ -12,8 +11,6 @@ const {
 } = require("../controller");
 const router = express.Router();
 
-///////////////////// trx api /////////////////////////////
-router.post("/trx-bet", placeBetTrx);
 router.post("/user_login", loginPage);
 router.get("/userwallet", getBalance);
 
